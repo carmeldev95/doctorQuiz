@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Quiz</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="bg-light">
+
+    <!-- Header -->
+    <div class="container-fluid py-3 text-center fade-in">
+      <img src="./assets/clalit.png" class="banner img-fluid" alt="Clalit Logo" />
+      <h1 id="header-text" class="fw-bold my-3 text-primary">
+        מה ההתמחות המתאימה עבורך?
+      </h1>
+      <img src="./assets/banner.png" class="banner img-fluid" alt="Banner" />
+    </div>
+
+    <!-- Game -->
+    <div
+      id="game-container"
+      class="container d-flex flex-column align-items-center justify-content-center fade-in"
+    >
+      <!-- Start Screen -->
+      <div id="name-form" class="text-center my-5">
+        <button id="start-game" class="btn btn-primary btn-lg px-5 py-4 fw-bold shadow-lg hover-glow">
+          בוא נגלה 🧑‍⚕️
+        </button>
+      </div>
+
+      <!-- Game Screen -->
+      <div id="game-body" class="game-box shadow-lg rounded-4 p-4 text-center bg-white fade-in">
+        <div id="game-content">
+          <h2 id="game-question" class="mb-4"></h2>
+
+          <div id="game-answers" class="d-flex flex-wrap justify-content-center gap-3">
+            <button
+              id="answer-a"
+              class="btn btn-outline-primary btn-answer px-4 py-3 rounded-3 hover-press"
+            ></button>
+            <button
+              id="answer-b"
+              class="btn btn-outline-primary btn-answer px-4 py-3 rounded-3 hover-press"
+            ></button>
+            <button
+              id="answer-c"
+              class="btn btn-outline-primary btn-answer px-4 py-3 rounded-3 hover-press"
+            ></button>
+          </div>
+
+          <div id="redirect" class="mt-4 fade-in">
+            <h5>
+              מעוניינים להתמחות במרכז הרפואי כרמל?
+              <a
+                href="https://hospitals.clalit.co.il/carmel/he/academia-and-research/Pages/internship_in_carmel.aspx"
+                target="_blank"
+                class="text-decoration-none fw-bold text-primary"
+              >
+                לחצו כאן
+              </a>
+              👉
+            </h5>
+            <button id="restart" class="btn btn-secondary mt-3 px-4 py-2 rounded-3">
+              נסה שוב
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 text-muted small fade-in">
+      © 2025 Carmel Hospital | Developed for fun 😄
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
