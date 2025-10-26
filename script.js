@@ -30,7 +30,7 @@ let questions = [
  */
 function getSpecialtyImagePath(specialty) {
   // המרת הטקסט לשם קובץ - מסיר רווחים ומוסיף .png
-  const fileName = specialty.trim().replace(/\s+/g, '_') + '.png';
+  const fileName = 'doctors.jpg';
   return `./assets/${fileName}`;
 }
 
@@ -184,4 +184,5 @@ $(document).ready(function() {
     // בעדינות נדאג שה־game-content יוצג
     $("#game-content").fadeIn(200);
   });
+
 });
